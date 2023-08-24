@@ -1,7 +1,31 @@
 import header from "../assets/images/header/header.png";
 import headTop from "../assets/images/header/head_one.png";
 import headDown from "../assets/images/header/head_two.png";
+import { useState } from "react";
 const Header = () => {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState(false);
+  const changeEmailInputHandler = (e) => {
+    setEmail(e.target.value.trim());
+  };
+
+  const blurEmailInputHandler = () => {
+    if (email.trim().length == 0) setEmailError(true);
+  };
+
+  // Form Submission:
+  const submitFormHandler = (e) => {
+    e.preventDefault();
+    if (email.length <= 0) setEmailError(true);
+    else {
+      // Do what shoud we do.
+      console.log(email);
+
+      setEmail("");
+      setEmailError(false);
+    }
+  };
+
   return (
     <header className="py-[8rem] container mx-auto flex flex-col lg:flex-row-reverse justify-evenly items-center">
       <div className="relative overflow-hidden basis-1/3">
@@ -31,15 +55,23 @@ const Header = () => {
           amazing results. And it&apos;s free.
         </p>
 
-        <form className="w-full">
+        <form onSubmit={submitFormHandler} className="xl:w-5/6 relative">
           <input
             type="email"
             name="email"
+            value={email}
             id="email"
+            onChange={changeEmailInputHandler}
+            onBlur={blurEmailInputHandler}
             placeholder="Enter Your Email"
-            className="border-solid border-slate-800 border py-6 px-12 border-r-0 rounded-sm placeholder:text-black transition duration-1000 outline-none focus:border-indigo-700"
+            className="border-solid border-slate-800 border py-6 w-full px-12 border-r-0 rounded-sm placeholder:text-black transition duration-1000 outline-none focus:border-indigo-700"
           />
-          <button className="py-6 px-12 text-lg font-bold text-white bg-indigo-700 rounded-sm transition duration-500 hover:bg-indigo-800">
+          {emailError && (
+            <p className="absolute left-0 -bottom-6 text-sm text-red-600 italic">
+              Your Email is incorrect
+            </p>
+          )}
+          <button className="py-6 px-12 absolute right-0 top-0 text-lg font-bold text-white bg-indigo-700 rounded-sm transition duration-500 hover:bg-indigo-800">
             Get Started
           </button>
         </form>
