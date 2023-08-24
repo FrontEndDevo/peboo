@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      Roboto: "Roboto",
       "work-sans": "Work Sans",
     },
   },
