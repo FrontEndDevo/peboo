@@ -7,7 +7,7 @@ const Features = () => {
       <div className="basis-1/2">
         <img src={allFeatures} alt="all features" className="w-full" />
       </div>
-      <div className="basis-1/2 px-4 text-center">
+      <div className="basis-1/2 px-4 text-center lg:text-start">
         <h2 className="text-3xl xl:text-6xl font-work-sans leading-tight font-normal border-indigo-600 border-b-4 p-2 rounded-2xl lg:border-none">
           Finally a place where it all comes together
         </h2>
