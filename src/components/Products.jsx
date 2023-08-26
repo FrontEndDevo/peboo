@@ -46,7 +46,7 @@ const Products = () => {
   ));
 
   return (
-    <section className="bg-blue-50 px-4 py-12 xl:p-32 relative overflow-hidden mb-96">
+    <section className="bg-blue-50 px-4 py-12 xl:p-32 relative overflow-hidden">
       <img
         src={bottomBackground}
         alt="bottom background"
