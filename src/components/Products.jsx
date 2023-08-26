@@ -39,7 +39,7 @@ const Products = () => {
       />
       <h4 className="font-work-sans text-2xl xl:text-3xl">{product.title}</h4>
       <p className="my-4 text-justify">{product.description}</p>
-      <button className="text-indigo-600 flex items-center justify-center gap-2 hover:underline mx-auto xl:mx-auto">
+      <button className="text-indigo-600 flex items-center justify-center gap-2 hover:underline mx-auto xl:mx-0">
         Learn More <FontAwesomeIcon icon={faArrowRightLong} />
       </button>
     </div>
