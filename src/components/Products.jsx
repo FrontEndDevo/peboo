@@ -53,7 +53,7 @@ const Products = () => {
         className="absolute -bottom-4 -left-4"
       />
       <div className="container mx-auto">
-        <h2 className="text-4xl xl:text-6xl font-work-sans text-center mb-24">
+        <h2 className="text-4xl xl:text-6xl font-work-sans text-center mb-24 border-indigo-600 border-b-4 p-2 rounded-2xl lg:border-none">
           One product, three solutions
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
