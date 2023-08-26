@@ -1,6 +1,6 @@
-import header from "../assets/images/header/header.png";
-import headTop from "../assets/images/header/head_one.png";
-import headDown from "../assets/images/header/head_two.png";
+import header from "../assets/images/header.png";
+import headTop from "../assets/images/top_background.png";
+import headDown from "../assets/images/bottom_background.png";
 import { useState } from "react";
 const Header = () => {
   const [email, setEmail] = useState("");
