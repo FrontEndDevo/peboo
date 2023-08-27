@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-[8rem] container mx-auto flex flex-col lg:flex-row-reverse justify-evenly items-center">
+    <header className="py-[5rem] md:py-[8rem] container mx-auto flex flex-col lg:flex-row-reverse justify-evenly items-center">
       <div className="relative overflow-hidden basis-1/3">
         <img
           className="rounded-tl-[60px] w-full"
