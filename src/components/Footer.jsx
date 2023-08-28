@@ -23,7 +23,7 @@ const socialMedia = [faFacebookF, faInstagram, faTwitter, faLinkedinIn];
 const Footer = () => {
   const hyperLinks = footerHyperLinks.map((obj, index) => (
     <div key={index} className="text-center lg:text-start">
-      <h3 className="font-work-sans text-3xl mb-4 border-indigo-600 border-b-4 p-2 rounded-2xl lg:border-none">
+      <h3 className="font-work-sans text-3xl mb-4 border-indigo-600 border-b-4 p-2 lg:p-0 rounded-2xl lg:border-none">
         {obj.topic}
       </h3>
       <ul>
