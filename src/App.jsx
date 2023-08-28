@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Statistics from "./components/Statistics";
+import WeDifferent from "./components/WeDifferent";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Products />
       <Features />
       <Statistics />
+      <WeDifferent />
     </>
   );
 };
