@@ -57,8 +57,8 @@ const Navbar = () => {
           </span>
         </div>
         <ul
-          className={`origin-bottom-right duration-500 flex gap-12 md:gap-20 flex-row-reverse items-center md:flex-row absolute top-4 md:top-0 right-full -rotate-90 md:rotate-0 md:relative md:right-0 ${
-            openMenu ? "opacity-100 right-3/4" : "opacity-0 md:opacity-100"
+          className={`origin-bottom-right duration-500 flex gap-12 md:gap-20 flex-row-reverse items-center md:flex-row absolute top-4 md:top-0 -rotate-90 md:rotate-0 md:relative md:right-0 ${
+            openMenu ? " right-[70%]" : "right-[120%]"
           }`}
         >
           {navbarLinks}
