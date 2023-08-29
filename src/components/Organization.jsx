@@ -11,25 +11,32 @@ const Organization = () => {
         Companies of every size, and in 62 different countries, are using Perdoo
         to beat their competitors.
       </p>
-      <div className="text-white bg-zinc-900 rounded-xl relative flex items-center gap-24 overflow-hidden">
+      <div className="text-white bg-zinc-900 rounded-xl relative flex flex-col lg:flex-row items-center lg:gap-8 xl:gap-24 overflow-hidden">
         <img
           src={top_right}
           alt="organization top right background"
-          className="absolute -top-4 -right-4 rotate-180"
+          className="absolute -top-6 -right-6 lg:-top-4 lg:-right-4 rotate-180"
         />
         <img
           src={top_left}
           alt="organization top left background"
-          className="absolute -top-4 -left-4"
+          className="absolute -top-8 -left-8 lg:-top-4 lg:-left-4"
         />
 
-        <img src={organization} alt="our managers" loading="lazy" />
-        <div className="w-1/2">
-          <q className="font-work-sans text-3xl">
+        <img
+          src={organization}
+          alt="our managers"
+          loading="lazy"
+          className="w-full lg:w-1/3"
+        />
+        <div className="lg:w-1/2 text-center p-4 lg:p-0">
+          <q className="font-work-sans text-xl lg:text-3xl">
             Peboo enabled everyone in our organization to focus on results that
             matter, and got everyone pointed in the same direction.
           </q>
-          <p className="font-work-sans text-xl mb-2 mt-12">Shannon Lincoln</p>
+          <p className="font-work-sans text-xl lg:mb-2 mt-6 lg:mt-12">
+            Shannon Lincoln
+          </p>
           <p className="font-work-sans text-xl opacity-75">
             VP Finance, Shippo
           </p>
