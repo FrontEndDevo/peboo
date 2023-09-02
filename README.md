@@ -1,8 +1,11 @@
-# React + Vite
+<h1>Peboo - Business Consultancy Landing Page</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Preview the app: frontenddevo.github.io/peboo/
 
-Currently, two official plugins are available:
+<p>Peboo is a modern and responsive landing page template designed for business consultancies. Built using React.js, Peboo offers a sleek and professional design that helps showcase your consultancy services effectively.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used: Reactjs and TailwindCSS
+
+
+Status 📶: in-progress.
+
