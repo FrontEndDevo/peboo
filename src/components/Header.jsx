@@ -45,8 +45,8 @@ const Header = () => {
           alt="header-background-down"
         />
       </div>
-      <div className="basis-1/2 text-center lg:text-start mt-8 mx-4 lg:mx-0">
-        <h2 className=" font-work-sans lg:w-5/6 text-5xl xl:text-7xl">
+      <div className="mx-4 mt-8 text-center basis-1/2 lg:text-start lg:mx-0">
+        <h2 className="text-5xl font-work-sans lg:w-5/6 xl:text-7xl">
           Your strategy is only as good as you execute it
         </h2>
 
@@ -55,7 +55,7 @@ const Header = () => {
           amazing results. And it&apos;s free.
         </p>
 
-        <form onSubmit={submitFormHandler} className="xl:w-5/6 relative">
+        <form onSubmit={submitFormHandler} className="relative xl:w-5/6">
           <input
             type="email"
             name="email"
@@ -64,14 +64,14 @@ const Header = () => {
             onChange={changeEmailInputHandler}
             onBlur={blurEmailInputHandler}
             placeholder="Enter Your Email"
-            className="border-solid border-slate-800 border py-6 w-full px-12 border-r-0 rounded-sm placeholder:text-black transition duration-1000 outline-none focus:border-indigo-700"
+            className="w-full px-12 py-6 transition duration-1000 border border-r-0 border-solid rounded-sm outline-none border-slate-800 placeholder:text-black focus:border-indigo-700"
           />
           {emailError && (
-            <p className="absolute left-0 -bottom-6 text-sm text-red-600 italic">
+            <p className="absolute left-0 text-sm italic text-red-600 -bottom-6">
               Your Email is incorrect
             </p>
           )}
-          <button className="py-6 px-12 absolute right-0 top-0 text-lg font-bold text-white bg-indigo-700 rounded-sm transition duration-500 hover:bg-indigo-800">
+          <button className="absolute top-0 right-0 px-12 py-6 text-lg font-bold text-white transition duration-500 bg-indigo-700 rounded-sm hover:bg-indigo-800">
             Get Started
           </button>
         </form>

@@ -42,7 +42,7 @@ const Navbar = () => {
         navbarBackground && "md:bg-indigo-900 md:text-white"
       }`}
     >
-      <div className="container w-fit relative md:mx-auto md:w-full flex items-center justify-between md:py-10">
+      <div className="container relative flex items-center justify-between w-fit md:mx-auto md:w-full md:py-10">
         <div onClick={openMenuHandler} className="relative">
           <h1
             className={`font-work-sans duration-500 rounded-r-full py-1 pl-8 pr-3 text-white ${
@@ -51,9 +51,9 @@ const Navbar = () => {
           >
             Peboo
           </h1>
-          <span className="md:hidden absolute top-1/3 left-2 flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-500 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-400"></span>
+          <span className="absolute flex w-3 h-3 md:hidden top-1/3 left-2">
+            <span className="absolute inline-flex w-full h-full bg-indigo-500 rounded-full opacity-75 animate-ping"></span>
+            <span className="relative inline-flex w-3 h-3 bg-indigo-400 rounded-full"></span>
           </span>
         </div>
         <ul

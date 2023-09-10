@@ -31,32 +31,32 @@ const Products = () => {
   const renderedProducts = ourProducts.map((product, index) => (
     <div
       key={index}
-      className="bg-white p-10 rounded text-center xl:text-start"
+      className="p-10 text-center bg-white rounded xl:text-start"
     >
       <FontAwesomeIcon
         icon={product.icon}
-        className="bg-indigo-600 text-white p-6 text-5xl rounded mb-8"
+        className="p-6 mb-8 text-5xl text-white bg-indigo-600 rounded"
       />
-      <h4 className="font-work-sans text-2xl xl:text-3xl">{product.title}</h4>
+      <h4 className="text-2xl font-work-sans xl:text-3xl">{product.title}</h4>
       <p className="my-4 text-justify">{product.description}</p>
-      <button className="text-indigo-600 flex items-center justify-center gap-2 hover:underline mx-auto xl:mx-0">
+      <button className="flex items-center justify-center gap-2 mx-auto text-indigo-600 hover:underline xl:mx-0">
         Learn More <FontAwesomeIcon icon={faArrowRightLong} />
       </button>
     </div>
   ));
 
   return (
-    <section className="bg-blue-50 px-4 py-12 xl:p-32 relative overflow-hidden">
+    <section className="relative px-4 py-12 overflow-hidden bg-blue-50 xl:p-32">
       <img
         src={bottomBackground}
         alt="bottom background"
         className="absolute -bottom-4 -left-4"
       />
       <div className="container mx-auto">
-        <h2 className="text-4xl xl:text-6xl font-work-sans text-center mb-24 border-indigo-600 border-b-4 p-2 rounded-2xl lg:border-none">
+        <h2 className="p-2 mb-24 text-4xl text-center border-b-4 border-indigo-600 xl:text-6xl font-work-sans rounded-2xl lg:border-none">
           One product, three solutions
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 xl:grid-cols-3">
           {renderedProducts}
         </div>
       </div>
